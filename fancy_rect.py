@@ -7,6 +7,6 @@ def fancy_rect(w,h):
  p((b+" "*m+b+n)*(h-2))
  p(c(x+10),a*m,c(x+13)+n)
 v=s.argv           
-if len(v) != 3:
+if len(v)!=3:
  s.exit(f"usage: {v[0]} <width> <height>")
 fancy_rect(int(v[1]), int(v[2]))
