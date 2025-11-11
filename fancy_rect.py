@@ -1,3 +1,3 @@
 import sys
-def fancy_rect(w,h):c,x,m,n=chr,9552,w-2,"\n";a,b=c(x),c(x+1);print(c(x+4)+a*m+c(x+7)+n+(b+" "*m+b+n)*(h-2)+c(x+10)+a*m+c(x+13))
+def fancy_rect(w,h):m,n=w-2,"\n";a,b="═","║";print("╔"+a*m+"╗"+n+(b+" "*m+b+n)*(h-2)+"╚"+a*m+"╝")
 fancy_rect(*map(int,sys.argv[1:]))
